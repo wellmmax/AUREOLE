@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #02050c;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Noto Sans SC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: none;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Noto Serif SC', Georgia, serif;
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom minimal range slider for cosmic energy */
+input[type='range'].aureole-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range'].aureole-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+input[type='range'].aureole-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--slider-accent, #f5b851);
+  border: 2px solid #090d16;
+  margin-top: -5.5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type='range'].aureole-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.18);
+}
+
+input[type='range'].aureole-slider::-moz-range-track {
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+input[type='range'].aureole-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--slider-accent, #f5b851);
+  border: 2px solid #090d16;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AUREOLE · 星核圣殿",
+  "description": "A real-time interactive 3D digital art sculpture featuring an obsidian star core with molten fractal fissures, three tilted metallic astrolabe rings, and 80,000 depth-of-field cosmic particles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
